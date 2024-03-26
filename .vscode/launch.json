@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+		"cwd": "${workspaceRoot}",
+		"executable": "./build/TEST-NUCLEO-f429zi.elf",
+		"name": "stm32f429zi",
+		"gdbPath": "arm-none-eabi-gdb",
+		"request": "launch",
+		"type": "cortex-debug",
+		"servertype": "openocd",
+		"svdFile": "stm32f429.svd",
+		"configFiles": [
+			"interface/stlink.cfg",
+			"target/stm32f4x.cfg"
+		],
+		"runToEntryPoint": "main",
+		"showDevDebugOutput": "vscode",
+	}
+	]
+}

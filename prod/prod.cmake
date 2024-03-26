@@ -1,0 +1,1 @@
+set(TARGET_SOURCE_FILES ${TARGET_SOURCE_FILES} ${PROD_DIR}/src/main.cxx)

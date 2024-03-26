@@ -1,0 +1,27 @@
+{
+	"version": 3,
+	"configurePresets": [
+		{
+			"name": "build",
+            "hidden": false,
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+			"installDir": "${sourceDir}/bin",
+            "toolchainFile": "${sourceDir}/board/NUCLEO-f429zi/NUCLEO-f429zi.cmake",
+            "cacheVariables": {
+                "APPNAME": "TEST",
+                "BOARDNAME": "NUCLEO-f429zi",
+                "CMAKE_C_COMPILER": "arm-none-eabi-gcc.exe",
+                "CMAKE_CXX_COMPILER": "arm-none-eabi-g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            }
+		}
+	],
+	"buildPresets": [
+        {
+            "name": "build-debug",
+            "configurePreset": "build",
+            "verbose": false
+        }
+	]
+}
