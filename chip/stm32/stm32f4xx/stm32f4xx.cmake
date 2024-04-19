@@ -1,0 +1,16 @@
+set(CHIP_FAMILY STM32F4xx)
+
+include(${CMAKE_CURRENT_LIST_DIR}/../stm32.cmake)
+include(${ARCH_DIR}/arm/cm4f/model.cmake)
+
+list(APPEND TARGET_COMPILE_DEFINITIONS
+    -D${CHIP_FAMILY}
+)
+
+list(APPEND TARGET_INCLUDE_DIRECTORIES 
+    ${CMAKE_CURRENT_LIST_DIR}/inc
+)
+
+list(APPEND TARGET_SOURCE_FILES
+    ${CMAKE_CURRENT_LIST_DIR}/src/system_stm32f4xx.c
+)

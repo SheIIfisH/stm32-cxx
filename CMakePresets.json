@@ -7,10 +7,10 @@
             "generator": "Ninja",
             "binaryDir": "${sourceDir}/build",
 			"installDir": "${sourceDir}/bin",
-            "toolchainFile": "${sourceDir}/board/NUCLEO-f429zi/NUCLEO-f429zi.cmake",
+            "toolchainFile": "${sourceDir}/arch/arm/toolchain/gcc/toolchain.cmake",
             "cacheVariables": {
-                "APPNAME": "TEST",
-                "BOARDNAME": "NUCLEO-f429zi",
+                "APPNAME": "test",
+                "BOARDNAME": "nucleo-f429zi",
                 "CMAKE_C_COMPILER": "arm-none-eabi-gcc.exe",
                 "CMAKE_CXX_COMPILER": "arm-none-eabi-g++.exe",
                 "CMAKE_BUILD_TYPE": "Debug"
